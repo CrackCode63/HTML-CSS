@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+            width: 80vw;
+            height: 30vh;
+            background-color: palevioletred;
+
+        }
+        .box{
+            width: 30vw;
+            height: 20vh;
+            background-color: saddlebrown;
+            /* animation: apanka;
+            animation-duration: 3s;
+            /* animation: reverse; */
+           /* animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-play-state: running; */
+            animation: apanka 3s ease-in-out 0s infinite  alternate ;
+        }
+        @keyframes apanka{
+            from{
+                background-color: olive;
+            }
+            to{
+                transform: translateX(100px);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>

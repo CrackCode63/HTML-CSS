@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Exercise</title>
+    <style>
+        .container{
+            background-color: blanchedalmond;
+            width: 100vw;
+            height: 500px;
+            position: relative;
+        }
+        .ball{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: ballbounce ballup 1s ease-in-out 1s infinite ;
+        }
+        @keyframes ballright{
+            from{
+
+            }
+            to{
+                transform: translatex(1060px);
+                /* transform: scaleX(100px); */
+            }
+        }
+        /* @keyframes ballup{
+            to{
+
+            }
+            from{
+                transform: rotateY(500px);
+            }
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .main{
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                "head head head"
+                                "side content side1"
+                                "footer footer footer";
+        }
+        img{
+            height: 10vh;
+        }
+        .nav{
+            display: grid;
+            grid-template-areas: nav;
+            grid-template-columns: 1fr 9fr;
+        }
+        ul{
+            display: grid;
+            grid-template-columns:
+            100px 100px 100px 100px 100px;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            list-style-type: none;
+        }
+        ul a li{
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: cursive;
+        }
+        .head{
+            display: grid;
+            grid-template-areas: head head head;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav class="nav">
+            <div class="logo">
+                <a href="#"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt=""></a>
+            </div>
+            <ul>
+                <a href="#"><li>Product</li></a>
+                <a href="#"><li>Pricing</li></a>
+                <a href="#"><li>Resources</li></a>
+                <a href="#"><li>About Us</li></a>
+            </ul>
+        </nav>
+        <div class="head">
+            Download <strong>UltraEdit</strong>for Windows
+        </div>
+    </div>
+</body>
+</html>
