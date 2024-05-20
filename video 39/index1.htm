@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                "side article side1"
+                                "footer footer footer";
+        }
+        .item1{
+            grid-area: nav;
+            border: 2px solid salmon;
+            height: 50px;
+           
+        }
+        .item1 ul li {
+            display: flex;
+            justify-content:center;
+            display: inline;
+            margin: 10px;
+            font-family: cursive;
+            
+        }
+        .item2{
+            height: 50px;
+            grid-area: side;
+            border: 2px solid rgb(79, 116, 24);
+        }       
+        .item3{
+            grid-area: article;
+            height: 50px;
+            border: 2px solid saddlebrown;
+        }
+        .item4{
+            grid-area: side1;
+            height: 50px;
+            border: 2px solid green;
+        }
+        .item5{
+            grid-area: footer;
+            border: 2px solid blueviolet;
+            height: 50px;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Products</li></a>
+                <a href="#"><li>Pricing</li></a>
+                <a href="#"><li>About us</li></a>
+                <a href="#"><li> Contact us</li></a>
+            </ul>   
+        </div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <!-- <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div> -->
+    </div>
+</body>
+</html>

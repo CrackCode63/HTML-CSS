@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .container{
+            display: grid;
+            width: 100vw;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+            height: 80px;
+            grid-template-columns:1fr 10fr 1fr ;
+
+        }
+        .item1{
+            background-color: green;
+        }
+        .item2{
+            background-color: rgb(0, 149, 255);
+        
+        }
+        ul {
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: cursive;
+        }
+        .item3{
+            background-color: rgb(128, 0, 38);
+        }
+        .nav{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">            
+            <ul class="nav">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Products</li></a>
+                <a href="#"><li>Pricing</li></a>
+                <a href="#"><li>About us</li></a>
+                <a href="#"><li>Contact us</li></a>
+            </ul>   
+        </div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+</html>

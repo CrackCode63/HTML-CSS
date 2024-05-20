@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV BAR</title>
+    <link rel="stylesheet" href="yt.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo"><a href="https://www.iqoo.com/in">IQOO</a></div>
+                <div class="menu">
+                    <ul>
+                        <a href="https://www.iqoo.com/in"><li>HOME</li></a>
+                        <a href="https://www.iqoo.com/in/products"><li>PRODUCT</li></a>
+                        <a href="https://www.iqoo.com/in/support"><li>SUPPORT</li></a>
+                        <a href="https://www.iqoo.com/in/activity/about-iqoo"><li>ABOUT IQOO</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="main">
+            <span class="first">
+                <img src="IQOO1.jpg">
+            </span>
+            <span class="second">
+                <p>CONTENT</p>
+            </span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function()
+        {
+            if($(window).scrollTop()){
+               $("nav").addClass("black");
+            }
+            else{
+                $("nav").removeClass("black"); 
+            }
+        });
+
+    </script>
+</body>
+</html>

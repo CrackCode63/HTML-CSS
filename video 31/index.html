@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MEDIA QUERIES</title>
+    <style>
+        body{
+            background-color: rgb(208, 159, 94);
+        };
+        @media only screen and (min-width:200px) {
+            body{
+                background-color: blueviolet
+            }
+            .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+           height: 344px; 
+           background-color: bisque;
+           padding: 3px;
+           margin: 3px;
+           
+        }
+            
+        }
+
+    </style>
+</head>
+<!-- SYNTAX OF MEDIA QUERIES
+ @media not| only mediatype and (expression){
+    CSS-CODE-CSS-CODE
+ } -->
+<body>
+    <div>
+        i am a red body guy.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

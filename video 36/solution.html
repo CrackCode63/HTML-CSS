@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI COLOR NAV BAR</title>
+    <style>
+        :root{
+            --primarycolor:#061872cc;
+            --textcolor:white;
+            --secondarycolor:#6ea6fccc;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-color: var(--secondarycolor);
+        }
+        ul li{
+            list-style-type: none;
+            display: inline;
+            padding: 23px;
+            font-family: cursive;
+            color:var(--textcolor);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a.hover{
+            cursor:grab;
+        }
+        nav{
+            background-color: var(--primarycolor);
+            
+            padding: px 0px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
